@@ -1,0 +1,104 @@
+:root {
+    --primary-dark-color: #4a148c;
+    --primary-medium-color: #8939ec;
+    --primary-light-color: #f9f5fe;
+    --secondary-dark-color: #e65100;
+    --secondary-medium-color: #ff810d;
+    --secondary-light-color: #fff9f4;
+    --black-dark-color: #131313;
+    --black-dark-medium-color: #363636;
+    --black-medium-color: #717171;
+    --black-medium-light-color: #b8b8b8;
+    --black-light-color: #e7e7e7;
+    --black-super-light-color: #f3f3f3;
+    --white-color: #ffffff;
+    --heading-font-family: "Vollkorn", serif;
+    --default-font-family: "Barlow", sans-serif;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Basic styles */
+body {
+    font-family: var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 24px;
+    color: var(--black-dark-color);
+    font-family: "Vollkorn", serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+h2 {
+    color: var(--black-dark-medium-color);
+}
+p {
+    font-family: var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Hero styles */
+.section {
+    padding: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--secondary-light-color);
+}
+.box-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.icon-hello {
+    margin-right: 15px;
+    width: 48px;
+    height: 48px;
+
+    @media screen and (min-width: 768px) {
+        width: 52px;
+        height: 52px;
+    }
+}
+.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+.button {
+    display: block;
+    margin: 0 auto;
+    padding: 16px 24px;
+    background-color: var(--primary-light-color);
+    border: 3px solid var(--primary-dark-color);
+    border-radius: 8px;
+    min-width: 150px;
+    font-family: var(--default-font-family);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--secondary-dark-color);
+    box-shadow: 5px 3px 5px rgba(33, 39, 39, 0.2);
+    transition: background-color 250ms var(--timing-function),
+        color 250ms var(--timing-function);
+}
+.button:not(:last-child) {
+    margin-bottom: 24px;
+}
+.button:hover {
+    background-color: var(--primary-dark-color);
+    color: var(--secondary-light-color);
+}

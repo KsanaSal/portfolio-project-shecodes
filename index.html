@@ -20,16 +20,21 @@
             href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400;1,500&family=Vollkorn:ital,wght@0,500;0,700;1,500;1,700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./styles/basic.css" />
+        <link rel="stylesheet" href="./styles/portfolio.css" />
         <title>Document</title>
     </head>
     <body>
-        <div class="container-fluid">
-            <h2>🖐 Hello, I am</h2>
+        <div class="container-fluid section">
+            <div class="box-title">
+            <svg class="icon-hello">
+                <use href="./images/sprite-icons.svg#icon-hand-hello"></use>
+            </svg>
+            <h2>Hello, I am</h2>
+        </div>
             <h1>Oksana Salivon</h1>
-            <p>Front-end developer, based in Europe</p>
-            <button type="button">ABOUT ME</button>
-            <button type="button">CONTACT ME</button>
+            <p class="description">Front-end developer, <span>based in Europe</span></p>
+            <button type="button" class="button">About me</button>
+            <button type="button" class="button">Contact me</button>
         </div>
     </body>
 </html>
