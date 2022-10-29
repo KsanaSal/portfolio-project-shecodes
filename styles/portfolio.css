@@ -75,22 +75,23 @@ p {
     flex-direction: column;
     margin-bottom: 24px;
 }
-.box-button{
-    display: block;
-    margin: 0 auto;
+.box-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .button {
-    
-    padding: 16px 24px;
+    padding: 4px 8px;
     background-color: var(--primary-light-color);
-    border: 3px solid var(--primary-dark-color);
-    border-radius: 8px;
+    border: 2px solid var(--primary-dark-color);
+    border-radius: 4px;
     min-width: 150px;
     font-family: var(--default-font-family);
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
+    text-transform: uppercase;
     color: var(--secondary-dark-color);
-    box-shadow: 5px 3px 5px rgba(33, 39, 39, 0.2);
+    box-shadow: 3px 5px 5px rgba(33, 39, 39, 0.2);
     transition: background-color 250ms var(--timing-function),
         color 250ms var(--timing-function);
 }
@@ -131,13 +132,21 @@ p {
         margin-bottom: 40px;
         text-align: center;
     }
-    .button:not(:last-child) {
-        margin-bottom: 0;
-    }
     .box-button {
         display: flex;
         justify-content: center;
+        flex-direction: row;
         gap: 50px;
+    }
+    .button{
+        padding: 16px 24px;
+        border-radius: 8px;
+        border: 3px solid var(--primary-dark-color);
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .button:not(:last-child) {
+        margin-bottom: 0;
     }
 }
 
