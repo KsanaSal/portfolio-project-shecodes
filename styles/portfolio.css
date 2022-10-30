@@ -23,6 +23,7 @@ body {
     font-size: 24px;
     font-weight: 400;
     line-height: 1.5;
+    text-align: center;
 }
 
 h1,
@@ -30,29 +31,34 @@ h2,
 h3,
 p {
     margin: 0;
+    font-family: "Vollkorn", serif;
 }
 
 h1 {
     margin-bottom: 24px;
     color: var(--black-dark-color);
-    font-family: "Vollkorn", serif;
     font-size: 36px;
     font-weight: 700;
-    text-align: center;
 }
 h2 {
     font-weight: 700;
+    font-size: 24px;
     color: var(--black-dark-medium-color);
 }
 p {
-    font-family: var(--default-font-family);
-    font-size: 20px;
+    font-family: var(--heading-font-family);
+    font-size: 16px;
     font-weight: 500;
-    text-align: center;
+    color: var(--black-dark-medium-color);
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Hero styles */
-.section {
+.section-hero {
     padding: 0;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -74,6 +80,7 @@ p {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 24px;
+    font-size: 20px;
 }
 .box-button {
     display: flex;
@@ -103,7 +110,59 @@ p {
     color: var(--secondary-light-color);
 }
 
+/* Content style */
+.box-text {
+    background-color: var(--primary-medium-color);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.text {
+    font-family: var(--default-font-family);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2;
+    color: var(--black-super-light-color);
+}
+.section-content {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.content__color-primary {
+    background-color: var(--primary-light-color);
+}
+.content__color-secondary {
+    background-color: var(--secondary-light-color);
+}
+.img-project-one {
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 240px;
+    height: 300px;
+}
+.img-project-two {
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 286px;
+    height: 168px;
+}
+.box-project {
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.title-project {
+    margin-bottom: 20px;
+    color: var(--black-dark-color);
+}
+.text-project {
+    margin-bottom: 20px;
+    font-family: var(--default-font-family);
+    font-size: 16px;
+}
+
 @media screen and (min-width: 768px) {
+    /* Hero style */
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -131,6 +190,7 @@ p {
         display: block;
         margin-bottom: 40px;
         text-align: center;
+        font-size: 32px;
     }
     .box-button {
         display: flex;
@@ -138,7 +198,7 @@ p {
         flex-direction: row;
         gap: 50px;
     }
-    .button{
+    .button {
         padding: 16px 24px;
         border-radius: 8px;
         border: 3px solid var(--primary-dark-color);
@@ -148,9 +208,51 @@ p {
     .button:not(:last-child) {
         margin-bottom: 0;
     }
+
+    /* Content style */
+    .box-text {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .text {
+        font-size: 24px;
+    }
+    .section-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .content-weather {
+        flex-direction: row-reverse;
+    }
+    .img-project-one {
+        margin: 0;
+        margin-right: 24px;
+    }
+    .img-project-two {
+        margin: 0;
+        margin-left: 24px;
+        width: 360px;
+        height: 212px;
+    }
+    .box-project {
+        margin: 0;
+        padding: 0;
+        max-width: 280px;
+        text-align: start;
+    }
+    .title-project {
+        margin-bottom: 16px;
+    }
+    .text-project {
+        margin-bottom: 16px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+    /* Hero style */
     .section {
         padding-top: 150px;
         padding-bottom: 150px;
@@ -162,5 +264,43 @@ p {
     }
     p {
         font-size: 36px;
+    }
+    .description {
+        font-size: 36px;
+    }
+
+    /* Content style */
+    .box-text {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    .text {
+        font-size: 32px;
+        line-height: 1.13;
+    }
+    .section-content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .img-project-one {
+        margin-right: 30px;
+        width: 380px;
+        height: 460px;
+    }
+    .img-project-two {
+        margin-left: 30px;
+        width: 600px;
+        height: 356px;
+    }
+    .box-project {
+        max-width: 540px;
+    }
+    .title-project {
+        margin-bottom: 24px;
+        font-size: 48px;
+    }
+    .text-project {
+        margin-bottom: 24px;
+        font-size: 24px;
     }
 }
