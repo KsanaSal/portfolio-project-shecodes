@@ -1,0 +1,32 @@
+@import "portfolio.css";
+
+.section-about {
+    margin-top: 74px;
+    padding: 0 15px;
+    padding-bottom: 80px;
+    background-color: var(--primary-light-color);
+}
+.nav-page {
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    text-decoration: underline;
+    font-size: 16px;
+}
+.content-about{
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 768px){
+    .section-about {
+        margin-top: 80px;
+        padding-bottom: 120px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .section-about {
+        margin-top: 108px;
+        padding-bottom: 150px;
+    }
+}

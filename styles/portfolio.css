@@ -68,21 +68,23 @@ a {
 /* Header style */
 .box-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     padding: 20px 15px;
     background-color: var(--primary-dark-color);
 }
 .nav {
     display: none;
+    flex: 1 100%;
 }
 .nav-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    align-items: start;
+    gap: 16px;
 }
 .nav-item a {
     font-size: 16px;
@@ -121,7 +123,7 @@ a {
     fill: currentColor;
 }
 .is-open {
-    display: block;
+    display: flex;
 }
 
 .button-menu .icon-close {
@@ -136,6 +138,7 @@ a {
 
 /* Hero styles */
 .section-hero {
+    margin-top: 74px;
     padding: 0;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -241,14 +244,16 @@ a {
 @media screen and (min-width: 768px) {
     /* Header style */
     .box-header {
-        padding-top: 28px;
-        padding-bottom: 28px;
+        padding-top: 22px;
+        padding-bottom: 22px;
     }
     .nav {
         display: flex;
+        flex: none;
     }
     .nav-list {
         display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 10px;
     }
@@ -257,7 +262,8 @@ a {
     }
 
     /* Hero style */
-    .section {
+    .section-hero {
+        margin-top: 80px;
         padding-top: 120px;
         padding-bottom: 120px;
     }
@@ -348,8 +354,8 @@ a {
 @media screen and (min-width: 1024px) {
     /* Header style */
     .box-header {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 36px;
+        padding-bottom: 36px;
     }
     .logo {
         width: 160px;
@@ -363,7 +369,8 @@ a {
     }
 
     /* Hero style */
-    .section {
+    .section-hero {
+        margin-top: 108px;
         padding-top: 150px;
         padding-bottom: 150px;
     }
