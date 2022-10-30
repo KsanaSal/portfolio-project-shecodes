@@ -56,7 +56,70 @@ img {
     max-width: 100%;
     height: auto;
 }
+ul{
+    list-style: none;
+}
 
+/* Header style */
+.box-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 20px 15px;
+    background-color: var(--primary-dark-color);
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 142px;
+    height: 24px;
+}
+.button-menu{
+    display: flex;
+    margin-left: auto;
+    padding: 4px;
+    z-index: 1;
+    /* width: 30px; */
+    /* height: 30px; */
+    border-radius: 4px;
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    color: var(--white-color);
+}
+.button-menu:hover{
+    color: var(--secondary-dark-color);
+    border-color: var(--secondary-dark-color);
+}
+.menu{
+    fill: currentColor;
+}
+.is-open{
+    display: block;
+}
+
+.button-menu .icon-close {
+    display: none;
+}
+.button-menu.is-open .icon-close {
+    display: block;
+}
+.button-menu.is-open .icon-menu {
+    display: none;
+}
+
+/* .mobile-button .mobile-button__icon-close {
+    display: none;
+}
+.mobile-button.is-open .mobile-button__icon-close {
+    display: block;
+}
+.mobile-button.is-open .mobile-button__icon-menu {
+    display: none;
+} */
 /* Hero styles */
 .section-hero {
     padding: 0;

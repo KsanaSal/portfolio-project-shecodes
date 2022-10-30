@@ -24,58 +24,96 @@
         <title>Document</title>
     </head>
     <body>
-        <div class="container-fluid section-hero">
-            <div class="box-title">
-                <svg class="icon-hello">
-                    <use href="./images/sprite-icons.svg#icon-hand-hello"></use>
+        <header class="container-fluid box-header">
+            <a href="/index.html" title="Homepage"
+                ><img class="logo" src="./images/She Codes.png"
+            /></a>
+            <div class="nav" data-menu>
+                <ul class="navigation">
+                    <li>Home</li>
+                    <li>About me</li>
+                    <li>Project</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <button type="button" class="button-menu" data-menu-button>
+                <svg class="menu" width="30" height="30">
+                    <use
+                        class="icon-menu"
+                        href="./images/sprite-icons.svg#icon-menu"
+                    ></use>
+                    <use
+                        class="icon-close"
+                        href="./images/sprite-icons.svg#icon-close"
+                    ></use>
                 </svg>
-                <h2>Hello, I am</h2>
-            </div>
-            <h1>Oksana Salivon</h1>
-            <p class="description">
-                Front-end developer, <span>based in Europe</span>
-            </p>
-            <div class="box-button">
-                <button type="button" class="button">About me</button>
-                <button type="button" class="button">Contact me</button>
-            </div>
-        </div>
-        <div class="box-text">
-            <p class="text">My a little projects during study in She Codes</p>
-        </div>
-        <div class="container-fluid section-content content__color-primary">
-            <img class="img-project-one"
-                src="./images/project-images/project-love-painting@1x.jpg"
-                alt="Lizard"
-                srcset="./images/project-images/project-love-painting@2x.jpg 2x"
-            />
-            <div class="box-project">
-                <h2 class="title-project">I love painting</h2>
-                <p class="text-project">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Cursus eget nunc scelerisque viverra mauris in
-                    aliquam sem fringilla. Enim nec dui nunc mattis enim ut
-                    tellus.
+            </button>
+        </header>
+        <main>
+            <div class="container-fluid section-hero">
+                <div class="box-title">
+                    <svg class="icon-hello">
+                        <use
+                            href="./images/sprite-icons.svg#icon-hand-hello"
+                        ></use>
+                    </svg>
+                    <h2>Hello, I am</h2>
+                </div>
+                <h1>Oksana Salivon</h1>
+                <p class="description">
+                    Front-end developer, <span>based in Europe</span>
                 </p>
-                <button type="button" class="button">Load mere</button>
+                <div class="box-button">
+                    <button type="button" class="button">About me</button>
+                    <button type="button" class="button">Contact me</button>
+                </div>
             </div>
-        </div>
-        <div class="container-fluid section-content content-weather content__color-secondary">
-            <img class="img-project-two"
-                src="./images/project-images/project-weather@1x.jpg"
-                alt="Weather"
-                srcset="./images/project-images/project-weather@2x.jpg 2x"
-            />
-            <div class="box-project">
-                <h2 class="title-project">Weather</h2>
-                <p class="text-project">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+            <div class="box-text">
+                <p class="text">
+                    My a little projects during study in She Codes
                 </p>
-                <button type="button" class="button">Load mere</button>
             </div>
-        </div>
+            <div class="container-fluid section-content content__color-primary">
+                <img
+                    class="img-project-one"
+                    src="./images/project-images/project-love-painting@1x.jpg"
+                    alt="Lizard"
+                    srcset="
+                        ./images/project-images/project-love-painting@2x.jpg 2x
+                    "
+                />
+                <div class="box-project">
+                    <h2 class="title-project">I love painting</h2>
+                    <p class="text-project">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Cursus eget nunc scelerisque viverra
+                        mauris in aliquam sem fringilla. Enim nec dui nunc
+                        mattis enim ut tellus.
+                    </p>
+                    <button type="button" class="button">Load mere</button>
+                </div>
+            </div>
+            <div
+                class="container-fluid section-content content-weather content__color-secondary"
+            >
+                <img
+                    class="img-project-two"
+                    src="./images/project-images/project-weather@1x.jpg"
+                    alt="Weather"
+                    srcset="./images/project-images/project-weather@2x.jpg 2x"
+                />
+                <div class="box-project">
+                    <h2 class="title-project">Weather</h2>
+                    <p class="text-project">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                    <button type="button" class="button">Load mere</button>
+                </div>
+            </div>
+        </main>
+        <script src="/mobile.js"></script>
     </body>
 </html>
