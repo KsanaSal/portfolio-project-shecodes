@@ -60,18 +60,69 @@
         <main>
             <div class="container-fluid section-about">
                 <div class="nav-page">
-                    <a href="/index.html">Home</a>
-                    <a href="/about.html">About me</a>
+                    <a class="nav-page-item" href="/index.html">Home</a>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    <a
+                        class="nav-page-item nav-page-item__current"
+                        href="/about.html"
+                        >About me</a
+                    >
                 </div>
                 <div class="content-about">
                     <h1>About me</h1>
-                    <p class="text-project">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Cursus eget nunc scelerisque viverra
-                        mauris in aliquam sem fringilla. Enim nec dui nunc
-                        mattis enim ut tellus.
-                    </p>
+                    <div class="story-about">
+                        <div class="img-border">
+                            <img
+                                class="img-about"
+                                src="./images/about-images/my-photo@1x.jpg"
+                                alt="Lizard"
+                                srcset="
+                                    ./images/about-images/my-photo@2x.jpg 2x
+                                "
+                            />
+                        </div>
+                        <div class="text-story">
+                            <p class="text-about">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Cursus eget nunc scelerisque viverra mauris in
+                                aliquam sem fringilla. Enim nec dui nunc mattis
+                                enim ut tellus.
+                            </p>
+                            <p class="text-about">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Cursus eget nunc scelerisque viverra mauris in
+                                aliquam sem fringilla. Enim nec dui nunc mattis
+                                enim ut tellus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid section-gallery">
+                <h2 class="title-gallery">My gallery picture</h2>
+                <div class="box-gallery">
+                    <div class="img-border">
+                        <img
+                            class="img-gallery"
+                            src="./images/gallery-images/img-big-lion@1x.jpg"
+                            alt="Lizard"
+                            srcset="
+                                ./images/gallery-images/img-big-lion@2x.jpg 2x
+                            "
+                        />
+                    </div>
+                    <div class="img-border">
+                        <img
+                            class="img-gallery"
+                            src="./images/gallery-images/img-horn@1x.jpg"
+                            alt="Lizard"
+                            srcset="./images/gallery-images/img-horn@2x.jpg 2x"
+                        />
+                    </div>
                 </div>
             </div>
         </main>
