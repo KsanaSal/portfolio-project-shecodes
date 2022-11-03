@@ -13,23 +13,6 @@
 .content-about {
     margin-top: 50px;
 }
-.img-border {
-    display: flex;
-    justify-content: center;
-    max-width: max-content;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 24px;
-    padding: 8px;
-    border: 3px solid var(--primary-medium-color);
-    border-radius: 12px;
-    background-color: var(--secondary-light-color);
-}
-.img-about {
-    width: 204px;
-    height: 260px;
-    border-radius: 12px;
-}
 .text-about {
     margin: 0 auto;
     padding: 0 50px;
@@ -46,9 +29,6 @@
 .title-gallery {
     margin-bottom: 30px;
     font-size: 20px;
-}
-.img-gallery {
-    border-radius: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -78,10 +58,6 @@
     }
     .content-about {
         margin-top: 64px;
-    }
-    .img-about {
-        width: 292px;
-        height: 380px;
     }
     .story-about {
         display: flex;
@@ -116,10 +92,6 @@
     }
     .content-about {
         margin-top: 88px;
-    }
-    .img-about {
-        width: 380px;
-        height: 494px;
     }
     .text-story {
         margin-left: 30px;

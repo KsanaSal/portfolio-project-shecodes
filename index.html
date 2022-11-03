@@ -42,13 +42,20 @@
             </button>
             <div class="nav" data-menu>
                 <ul class="nav-list">
-                    <li class="nav-item nav-item__current"><a href="/index.html" title="Homepage">Home</a></li>
-                    <li class="nav-item"><a href="/about.html" title="About">About me</a></li>
-                    <li class="nav-item"><a href="/index.html" title="Project">Project</a></li>
-                    <li class="nav-item"><a href="/index.html" title="Contact">Contact</a></li>
+                    <li class="nav-item nav-item__current">
+                        <a href="/index.html" title="Homepage">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about.html" title="About">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/index.html" title="Project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/index.html" title="Contact">Contact</a>
+                    </li>
                 </ul>
             </div>
-            
         </header>
         <main>
             <div class="container-fluid section-hero">
@@ -75,15 +82,17 @@
                 </p>
             </div>
             <div class="container-fluid section-content content__color-primary">
-                <img
-                    class="img-project-one"
-                    src="./images/project-images/project-love-painting@1x.jpg"
-                    alt="Lizard"
-                    srcset="
-                        ./images/project-images/project-love-painting@2x.jpg 2x
-                    "
-                />
-                <div class="box-project">
+                <div class="img-border">
+                    <img
+                    class="img-photo"
+                        src="./images/project-images/project-love-painting@1x.jpg"
+                        alt="Lizard"
+                        srcset="
+                            ./images/project-images/project-love-painting@2x.jpg 2x
+                        "
+                    />
+                </div>
+                <div class="box-project box-project__one">
                     <h2 class="title-project">I love painting</h2>
                     <p class="text-project">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -98,13 +107,15 @@
             <div
                 class="container-fluid section-content content-weather content__color-secondary"
             >
+            <div class="img-border">
                 <img
-                    class="img-project-two"
+                class="img-photo"
                     src="./images/project-images/project-weather@1x.jpg"
                     alt="Weather"
                     srcset="./images/project-images/project-weather@2x.jpg 2x"
                 />
-                <div class="box-project">
+            </div>
+                <div class="box-project box-project__two">
                     <h2 class="title-project">Weather</h2>
                     <p class="text-project">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
