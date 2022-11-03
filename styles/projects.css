@@ -4,3 +4,10 @@
 .project-cover{
     background-color: var(--secondary-light-color);
 }
+
+@media screen and (min-width: 768px) {
+    .text-project-content{
+        font-size: 24px;
+        margin: 0;
+    }
+}
