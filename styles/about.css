@@ -1,6 +1,6 @@
 @import "portfolio.css";
 
-.section-about {
+.section-cover {
     margin-top: 74px;
     padding: 0 15px;
     padding-bottom: 80px;
@@ -10,7 +10,7 @@
 .nav-page {
     display: none;
 }
-.content-about {
+.content-cover {
     margin-top: 50px;
 }
 .text-about {
@@ -32,7 +32,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .section-about {
+    .section-cover {
         margin-top: 80px;
         padding-bottom: 120px;
         padding-top: 24px;
@@ -56,7 +56,7 @@
     .nav-page-item__current {
         color: var(--secondary-dark-color);
     }
-    .content-about {
+    .content-cover {
         margin-top: 64px;
     }
     .story-about {
@@ -85,12 +85,12 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .section-about {
+    .section-cover {
         margin-top: 108px;
         padding-bottom: 150px;
         padding-top: 30px;
     }
-    .content-about {
+    .content-cover {
         margin-top: 88px;
     }
     .text-story {

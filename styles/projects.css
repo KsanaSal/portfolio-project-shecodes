@@ -1,0 +1,6 @@
+@import "portfolio.css";
+@import "about.css";
+
+.project-cover{
+    background-color: var(--secondary-light-color);
+}
