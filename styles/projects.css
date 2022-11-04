@@ -1,13 +1,50 @@
 @import "portfolio.css";
 @import "about.css";
 
-.project-cover{
-    background-color: var(--secondary-light-color);
-}
+/* .project-cover{
+    display: flex;
+} */
 
 @media screen and (min-width: 768px) {
     .text-project-content{
         font-size: 24px;
         margin: 0;
+    }
+    .project-cover{
+        display: flex;
+        flex-direction: column;
+    }
+    .name-project{
+        margin-bottom: 30px;
+    }
+    .img__margin{
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    .content-project{
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .content-project-cover{
+        display: flex;
+        align-items: center;
+    }
+    .content-project{
+        margin-left: 30px;
+    }
+    .content-project__position{
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    .text-project-cover{
+        display: flex;
+        gap: 30px;
+        
+    }
+    .img__margin{
+        margin: 0;
+        margin-bottom: 24px;
     }
 }

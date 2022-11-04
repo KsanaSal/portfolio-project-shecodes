@@ -1,11 +1,11 @@
 @import "portfolio.css";
+@import "projects.css";
 
 .section-cover {
     margin-top: 74px;
     padding: 0 15px;
     padding-bottom: 80px;
     padding-top: 1px;
-    background-color: var(--primary-light-color);
 }
 .nav-page {
     display: none;
