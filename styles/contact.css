@@ -1,0 +1,107 @@
+@import "portfolio.css";
+@import "about.css";
+@import "projects.css";
+
+.box-contact {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.contact-text {
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+.contact-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+.contact-text__color {
+    color: var(--primary-dark-color);
+}
+.link-cover {
+    display: flex;
+    align-items: center;
+}
+.contact-link {
+    align-items: center;
+    font-size: 16px;
+    color: var(--secondary-medium-color);
+    transition: color 250ms var(--timing-function),
+        text-shadow 250ms var(--timing-function);
+}
+.contact-link:hover {
+    color: var(--primary-medium-color);
+    text-shadow: 3px 2px 3px rgba(230, 81, 0, 0.3);
+}
+.contact-icon {
+    padding: 4px;
+    fill: var(--black-dark-medium-color);
+    margin-right: 4px;
+    width: 40px;
+    height: 40px;
+}
+.icon {
+    /* font-size: 32px; */
+    width: 32px;
+    height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        display: flex;
+    }
+    .box-contact {
+        margin-left: 14px;
+    }
+    .contact-text {
+        margin-bottom: 10px;
+    }
+    .contact-text {
+        margin-bottom: 8px;
+        font-size: 24px;
+    }
+    .contact-icon {
+        width: 48px;
+        height: 48px;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .contact-link {
+        font-size: 24px;
+    }
+    .contact-cover {
+        margin-bottom: 10px;
+    }
+    .box-link{
+        display: flex;
+        gap: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    .contact-text {
+        margin-bottom: 8px;
+        font-size: 32px;
+    }
+    .contact-icon {
+        width: 56px;
+        height: 56px;
+    }
+    .icon {
+        width: 48px;
+        height: 48px;
+    }
+    .box-work{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    .wrapper-content{
+        align-items: center;
+    }
+}
